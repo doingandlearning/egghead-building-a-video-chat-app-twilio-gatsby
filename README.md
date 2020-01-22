@@ -30,7 +30,7 @@ I took these notes originally in [Roam](https://roamresearch.com/#/app/starting-
 exported them and have been converting them to more generated Markdown.
 
 ### Notes taken on Roam
-☑︎☑︎☑︎☑︎☑︎☑︎☑︎☑︎◻︎◻︎
+☑︎☑︎☑︎☑︎☑︎☑︎☑︎☑︎☑︎☑︎
 
 ### Moved over to Github
-☑︎☑︎☑︎◻︎◻︎◻︎◻︎◻︎◻︎◻︎
+☑︎☑︎☑︎◻︎◻︎◻︎◻︎◻︎◻︎☑︎
