@@ -1,5 +1,12 @@
+---
+title: "03. Generate Dynamic Routes in Gatsby with Reach Router"
+metaTitle: "03. Generate Dynamic Routes in Gatsby with Reach Router"
+metaDescription: "Using dynamically generated routes for rooms."
+---
+
 # 3 - Generate Dynamic Routes in Gatsby with Reach Router
 
+[Video link](https://egghead.io/lessons/gatsby-create-a-react-form-in-gatsby)
 The heart of our app is going to be the actual rooms. The way the rooms are going to work is that someone's going to visit a URL, it's going to be /room/friends or /room/myroom.
 
 It's not possible (or desirable) to create a page for every possible room combination. We are going to use dynamic routing and a single page, `room.js` to handle all the rooms that our app will need, regardless of their name.
@@ -121,21 +128,21 @@ import Layout from '../components/layout';
 import VideoDisplay from '../components/video-display';
 
 const BounceToHome = () => {
-  useEffect() => {
-    navigate('/', {replace: true} )
-  }
-  return null;
+useEffect() => {
+navigate('/', {replace: true} )
+}
+return null;
 }
 
 export default () => (
-  <Layout>
-    <Router>
-      <VideoDisplay path="room/:roomID" />
-    </Router>
-  </Layout>
+<Layout>
+<Router>
+<VideoDisplay path="room/:roomID" />
+</Router>
+</Layout>
 );
 
-```
+````
 So, we have the component and everything necessary for it imported. The last thing we need to do is to make it the `default` for our Router. We do that by putting it at the end of the component list and, instead of the path parameter, we pass default.
 
 ### pages/room.js
@@ -156,7 +163,8 @@ export default () => (
     </Router>
   </Layout>
 );
-```
+````
+
 We can test this work by going to something like `/room/test` and confirming we see our JSON object. Then, go to `/room` and we'll be redirected to the `index.js` page. Because we've used replace, pressing the back button will bring us to `/room/test` and not `/room` causing an annoying redirect loop.
 
 ### Personal take
